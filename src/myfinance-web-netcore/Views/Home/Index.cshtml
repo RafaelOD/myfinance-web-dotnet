@@ -1,0 +1,17 @@
+﻿@model HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row justify-content-center">
+    <h1 class="display-4">My Finance Web</h1>
+    <p>Controle de Finanças Pessoais</p>
+
+    <form asp-asp-controller="Home" asp-action="Cadastro" method="post">
+        <div class="mb-3">
+            <label class="form-label">Teste</label>
+            <input type="text" id="txtNome" class="form-control" />
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </div>
+    </form>
+</div>

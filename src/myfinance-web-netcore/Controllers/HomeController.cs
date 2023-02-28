@@ -18,6 +18,12 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Cadastro(HomeModel model)
+    {
+        var teste = model.Nome;
+        return RedirectToAction("Index");
+    }
+
     public IActionResult Privacy()
     {
         return View();
